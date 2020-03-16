@@ -1,5 +1,5 @@
 ARG BASE_IMAGE_PREFIX
-FROM ${BASE_IMAGE_PREFIX}alpine
+FROM ${BASE_IMAGE_PREFIX}php
 
 # see hooks/post_checkout
 ARG ARCH
