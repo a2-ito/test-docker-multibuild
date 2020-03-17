@@ -1,4 +1,6 @@
-FROM arm32v7/alpine:3.10
+#FROM arm32v7/alpine:3.10
+ARG BASE_IMAGE_PREFIX
+FROM ${BASE_IMAGE_PREFIX}alpine:3.10
 
 COPY qemu-arm-static /usr/bin
 
