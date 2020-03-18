@@ -1,0 +1,16 @@
+image: a2ito/test-docker-multibuild:latest
+manifests:
+  - image: a2ito/test-docker-multibuild:latest-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: a2ito/test-docker-multibuild:latest-arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
+  - image: a2ito/test-docker-multibuild:latest-arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7e
